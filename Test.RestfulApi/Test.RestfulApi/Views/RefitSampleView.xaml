@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Test.RestfulApi.Views.MainPage"
-             Title="{Binding Title}">
+             xmlns:prism="http://prismlibrary.com"
+             x:Class="Test.RestfulApi.Views.RefitSampleView"
+             prism:ViewModelLocator.AutowireViewModel="True">
 
   <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
     <Label Text="REST TEST" />
@@ -11,5 +12,4 @@
     <Editor IsReadOnly="True" Text="{Binding JsonOutput}" />
 
   </StackLayout>
-
 </ContentPage>

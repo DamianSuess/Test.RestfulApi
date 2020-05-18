@@ -1,10 +1,5 @@
 ﻿using Prism.Commands;
-using Prism.Mvvm;
 using Prism.Navigation;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Test.RestfulApi.ViewModels
 {
@@ -13,7 +8,20 @@ namespace Test.RestfulApi.ViewModels
     public MainPageViewModel(INavigationService navigationService)
         : base(navigationService)
     {
-      Title = "Main Page";
+      Title = "Choose REST Helper";
+    }
+
+    public DelegateCommand CmdRefit => new DelegateCommand(OnRefit);
+    public DelegateCommand CmdRestSharp => new DelegateCommand(OnRestSharp);
+
+    private async void OnRefit()
+    {
+      // Navigate to Refit Samples
+    }
+
+    private async void OnRestSharp()
+    {
+      // Navigate to Refit Samples
     }
   }
 }

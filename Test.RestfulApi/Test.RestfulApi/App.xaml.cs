@@ -34,6 +34,7 @@ namespace Test.RestfulApi
 
       containerRegistry.RegisterForNavigation<NavigationPage>();
       containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
+      containerRegistry.RegisterForNavigation<RefitSampleView, RefitSampleViewModel>();
     }
   }
 }
